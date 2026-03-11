@@ -3,7 +3,7 @@ from transformers import pipeline
 
 analyzer= pipeline("sentiment-analysis")
 
-st.title("🧠Sentiment Analyzer")
+st.title("Sentiment Analyzer")
 st.write("Type any text below and the AI will tell you if it's positive or negative!")
 
 user_input=st.text_area("Enter any text here: ")
@@ -24,6 +24,7 @@ if st.button("Analyse"):
 
         st.write(f"Confidence: {confidence}%")
         st.progress(score)
+
 
 
 
