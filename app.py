@@ -10,7 +10,7 @@ user_input=st.text_area("Enter any text here: ")
 
 if st.button("Analyse"):
     if user_input == "":
-        st.warning("⚠️ Please enter some text first!")
+        st.warning("Please enter some text first!")
     else:
         result=analyzer(user_input)
         label=result[0]["label"]
@@ -24,5 +24,6 @@ if st.button("Analyse"):
 
         st.write(f"Confidence: {confidence}%")
         st.progress(score)
+
 
 
